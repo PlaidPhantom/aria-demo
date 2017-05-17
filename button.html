@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="button.css">
+</head>
+<body>
+	<h1>Buttons</h1>
+
+	<p><button>A real button! I don't need a role.</button></p>
+	<p><a class="btn btn-default">Bootstrap will make me look like a button, but screen readers still treat me like a link</a></p>
+	<p><a class="btn btn-default" role="button" aria-label="a button">Screen readers will know I'm a button.</a></p>
+
+	<p>
+		<button aria-pressed>I'm a toggle button! Take that, HTML!</button>
+	</p>
+
+	<script>
+		document.querySelectorAll('button[aria-pressed]').forEach(btn => {
+			btn.addEventListener('click', event => {
+				if (event.target.getAttribute('aria-pressed') !== 'true')
+					event.target.setAttribute('aria-pressed', 'true');
+				else
+					event.target.setAttribute('aria-pressed', 'false');
+			});
+		});
+	</script>
+</body>
+</html>

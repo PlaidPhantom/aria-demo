@@ -1,0 +1,29 @@
+<html>
+<head>
+	<script src="tabs.js"></script>
+	<link rel="stylesheet" href="tabs.css" />
+</head>
+<body>
+	<h1>Some Tabs</h1>
+	<ul role="tablist">
+		<li id="tab1" role="tab" aria-controls="panel1" aria-selected="true" tabindex="0">
+			Tab 1
+		</li>
+		<li id="tab2" role="tab" aria-controls="panel2" aria-selected="false" tabindex="0">
+			Tab 2
+		</li>
+		<li id="tab3" role="tab" aria-controls="panel3" aria-selected="false" tabindex="0">
+			Tab 3
+		</li>
+	</ul>
+	<div id="panel1" role="tabpanel" aria-labelled-by="tab1" aria-hidden="false">
+		<h2>Tab 1</h2>
+	</div>
+	<div id="panel2" role="tabpanel" aria-labelled-by="tab2" aria-hidden="true">
+		<h2>Tab 2</h2>
+	</div>
+	<div id="panel3" role="tabpanel" aria-labelled-by="tab3" aria-hidden="true">
+		<h2>Tab 3</h2>
+	</div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+@import "node_modules/bootstrap-sass/assets/stylesheets/_bootstrap";
+
+
+button, [role="button"] {
+	@extend .btn;
+	@extend .btn-default;
+
+	&[aria-pressed="true"] {
+		@extend .btn.active;
+		@extend .btn-default.active;
+	}
+}

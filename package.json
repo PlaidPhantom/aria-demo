@@ -1,0 +1,19 @@
+{
+  "name": "aria-demo",
+  "version": "1.0.0",
+  "description": "`Web Accessibility Initiative - Accessible Rich Internet Applications`",
+  "main": "tabs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "$(npm bin)/http-server",
+    "sass": "$(npm bin)/node-sass button.scss button.css && $(npm bin)/node-sass tabs.scss tabs.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "http-server": "^0.10.0",
+    "node-sass": "^4.5.3",
+    "normalize.css": "^7.0.0"
+  }
+}
