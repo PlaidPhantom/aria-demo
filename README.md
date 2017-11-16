@@ -22,7 +22,7 @@ https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques
 ```html
 <button>A real button! I don't need a role.</button>
 <a class="btn btn-default">Bootstrap will make me look like a button, but screen readers still treat me like a link</a>
-<a role="btn btn-default" aria-label="a button">Screen readers will know I'm a button.</a>
+<a role="button" class="btn btn-default" aria-label="a button">Screen readers will know I'm a button.</a>
 <button aria-pressed="true">I'm a toggle button! Take that, HTML!</button>
 ```
 
